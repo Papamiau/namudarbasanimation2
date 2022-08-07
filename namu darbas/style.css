@@ -1,0 +1,51 @@
+body {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  font-family: arial;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+section .figura {
+  height: 100px;
+  width: 100px;
+  background: greenyellow;
+  border: 3px solid black;
+  transition: 1s ease-in;
+  margin: auto;
+}
+
+.animacija1:hover .figura {
+  background-color: #7d183b;
+  height: 100px;
+  width: 100px;
+  border: 10px solid #223b32;
+  border-radius: 100px;
+}
+
+.animacija2 .figura {
+  animation: animatrix 6s infinite alternate ease 0.5s;
+}
+
+@keyframes animatrix {
+  0% {
+    background: black;
+  }
+
+  33% {
+    background: crimson;
+    transform: rotate(360deg) scale(1, 0.5);
+    border-radius: 100px;
+  }
+  66% {
+    background: gray;
+    transform: rotate(360deg) rotateZ(90);
+  }
+  100% {
+    background: blueviolet;
+    transform: rotateZ(270);
+  }
+}
